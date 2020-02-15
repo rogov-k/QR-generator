@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script src="qrcode.js"></script>
+<script type="text/javascript">
+    let qr = new QRCode();
+
+    console.log(JSON.stringify(qr.get("Bad motherfucker").join(',').split(',').map(e => parseInt(e))));
+</script>
+</body>
+</html>
